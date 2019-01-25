@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TugasPromobSpinner</string>
+
+    <string-array name="wilayah">
+        <item>Sumatra</item>
+        <item>Kalimantan</item>
+        <item>Jawa</item>
+        <item>Bali-Nusra</item>
+        <item>Maluku</item>
+        <item>Papua</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:autoSizeMaxTextSize="24dp"
+        android:text="Encryption Program, by gw11" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtPlain"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="29dp"
+        android:text="Plaintext" />
+    <EditText
+        android:id="@+id/txtPlain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginLeft="37dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:lines="4" >
+        <requestFocus />
+    </EditText>
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtPlain"
+        android:layout_centerVertical="true"
+        android:text="Ciphertext" />
+    <EditText
+        android:id="@+id/txtCipher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView01"
+        android:layout_below="@+id/TextView01"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:minLines="4" />
+
+    <Button
+        android:id="@+id/btEnkrip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtCipher"
+        android:layout_below="@+id/txtCipher"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="36dp"
+        android:onClick="btEnkrip"
+        android:text="ENCRYPT" />
+
+    <Button
+        android:id="@+id/bt_dekrip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btEnkrip"
+        android:layout_alignBottom="@+id/btEnkrip"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="69dp"
+        android:onClick="btEnkrip"
+        android:text="DECRYPT" />
+</RelativeLayout>

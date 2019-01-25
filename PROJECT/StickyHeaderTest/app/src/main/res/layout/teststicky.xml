@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".RecyclerViewBangunDatar">
+
+    <ImageView
+        android:layout_marginTop="15dp"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:id="@+id/bangundatarthumbnail"
+        />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Bangun"
+                android:textSize="25dp"
+                android:background="@drawable/white_circle_drawable"
+                android:padding="8dp"
+                android:layout_marginTop="50dp"
+                android:backgroundTint="@android:color/holo_red_light"
+                android:id="@+id/bangundatartype"
+                android:textColor="@android:color/white"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rumus"
+                android:textSize="20dp"
+                android:background="@drawable/white_circle_drawable"
+                android:padding="8dp"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@android:color/holo_red_light"
+                android:id="@+id/bangundatarrumus"
+                android:textColor="@android:color/white"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textSize="15dp"
+                android:background="@drawable/white_circle_drawable"
+                android:padding="8dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="30dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+                android:backgroundTint="@android:color/holo_red_light"
+                android:id="@+id/bangundatardeskripsi"
+                android:textColor="@android:color/white"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="COBA PERHITUNGAN !"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@android:color/holo_blue_light"
+                android:id="@+id/buttonhitung"
+                />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

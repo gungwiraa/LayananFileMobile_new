@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MenuFormAwal">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Form Identitas Pemohon Paspor"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="26dp" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="64dp"
+            android:ems="10"
+            android:hint="Nama Pemohon"
+            android:textColorHint="@android:color/black"
+            android:textColor="@android:color/black"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="64dp"
+            app:met_baseColor="@android:color/black"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="@android:color/black"
+            app:met_singleLineEllipsis="true"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editText1"
+            android:ems="10"
+            android:hint="Alamat Pemohon"
+            android:textColorHint="@android:color/black"
+            android:textColor="@android:color/black"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="64dp"
+            app:met_baseColor="@android:color/black"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="@android:color/black"
+            app:met_singleLineEllipsis="true"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/editText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editText2"
+            android:ems="10"
+            android:hint="Email"
+            android:textColorHint="@android:color/black"
+            android:textColor="@android:color/black"
+            android:inputType="textEmailAddress"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="64dp"
+            app:met_baseColor="@android:color/black"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="@android:color/black"
+            app:met_singleLineEllipsis="true"/>
+
+    </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

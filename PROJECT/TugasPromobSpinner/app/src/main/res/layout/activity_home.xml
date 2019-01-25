@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.example.ux32vd.tugaspromobspinner.Home">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:text="Form Registrasi Seminar 2018"
+        android:textColor="@android:color/white"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editText2"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:hint="Input Instansi"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText1"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="41dp"
+        android:ems="10"
+        android:hint="Input Nama"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText1"
+        android:layout_below="@+id/editText1"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textColor="@android:color/white"
+        android:hint="Input E-mail"
+        android:textColorHint="@android:color/white"/>
+
+    <RadioGroup
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/editText3"
+        android:id="@+id/radioGroup">
+        <RadioButton
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/editText3"
+            android:layout_below="@+id/editText3"
+            android:layout_marginTop="15dp"
+            android:text="Vegetarian"
+            android:textSize="18dp"
+            android:textColor="@android:color/white" />
+        <RadioButton
+            android:id="@+id/checkBox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/checkBox2"
+            android:layout_toEndOf="@+id/textView3"
+            android:text="Non Vegetarian"
+            android:textSize="18dp"
+            android:textColor="@android:color/white"
+            />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/radioGroup"
+        android:layout_below="@+id/editText3"
+        android:layout_marginTop="105dp"
+        android:text="Sesi 1"
+        android:textSize="18dp"
+        android:textColor="@android:color/white"/>
+
+    <CheckBox
+        android:id="@+id/checkBox5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/checkBox4"
+        android:layout_alignBottom="@+id/checkBox4"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/checkBox4"
+        android:text="Sesi 2"
+        android:textColor="@android:color/white"
+        android:textSize="18dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/checkBox5"
+        android:layout_alignBottom="@+id/checkBox5"
+        android:layout_marginStart="13dp"
+        android:layout_toEndOf="@+id/checkBox5"
+        android:text="Sesi 3"
+        android:textColor="@android:color/white"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/checkBox4"
+        android:layout_below="@+id/checkBox4"
+        android:layout_marginTop="19dp"
+        android:text="Wilayah"
+        android:textColor="@android:color/white"
+        android:textSize="18dp" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="11dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp"
+        android:text="SIMPAN" />
+
+</RelativeLayout>
+
