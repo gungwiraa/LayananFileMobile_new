@@ -1,6 +1,7 @@
 package com.example.user.layananfilemobile;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -63,8 +64,9 @@ public class MenuRegister extends AppCompatActivity implements View.OnClickListe
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
-                            Toast.makeText(MenuRegister.this, "Register Berhasil", Toast.LENGTH_SHORT).show();
+                            finish();
                             progressDialog.dismiss();
+                            startActivity(new Intent(getApplicationContext(), MenuUtama.class));
                         }else{
                             Toast.makeText(MenuRegister.this, "Register Gagal", Toast.LENGTH_SHORT).show();
                         }
