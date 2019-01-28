@@ -59,7 +59,7 @@ public class MenuUtama extends AppCompatActivity implements View.OnClickListener
         UserInformation userInformation = new UserInformation(nama, nim);
         FirebaseUser user = firebaseAuth.getCurrentUser();
         databaseReference.child(user.getUid()).setValue(userInformation);
-        Toast.makeText(this, "Informasi Tersimpan...", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "Informasi Berhasil Tersimpan...", Toast.LENGTH_LONG).show();
 
     }
 
