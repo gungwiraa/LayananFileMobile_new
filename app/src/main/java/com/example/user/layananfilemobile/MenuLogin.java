@@ -1,6 +1,7 @@
 package com.example.user.layananfilemobile;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -33,6 +34,12 @@ public class MenuLogin extends AppCompatActivity implements View.OnClickListener
 
         firebaseAuth = FirebaseAuth.getInstance();
 
+        if(firebaseAuth.getCurrentUser() != null){
+            //menu profil
+            finish();
+            startActivity(new Intent(getApplicationContext(), MenuUtama.class));
+        }
+
         login_email = (EditText)findViewById(R.id.login_email);
         login_password = (EditText) findViewById(R.id.login_password);
         btnLogin = (Button) findViewById(R.id.btnLogin);
@@ -64,6 +71,10 @@ public class MenuLogin extends AppCompatActivity implements View.OnClickListener
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         progressDialog.dismiss();
+                        if(task.isSuccessful()){
+                            finish();
+                            startActivity(new Intent(getApplicationContext(), MenuUtama.class));
+                        }
 
                     }
                 });
